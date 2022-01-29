@@ -5,7 +5,7 @@ Video Game Project
 
 PUSHED 29/1/2022
 
-INSTRUCTIONS ayam
+INSTRUCTIONS 
 
 Clone/Pull the whole repository into your local machine by running 
 git clone "<reposHttps link>"

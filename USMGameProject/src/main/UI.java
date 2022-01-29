@@ -938,10 +938,10 @@ public class UI {
 		if(endingScreenState == 3) {
 			
 			String Lore1 = "You lost young shinobi";
-			String Lore2 = "Killed in a honour";
+			String Lore2 = "Killed with honor";
 			String Lore3 = "Death by combat";
-			String Lore4 = "But fret not";
-			String Lore5 = "You WILL avenge your brother";
+			String Lore4 = "But be prepared";
+			String Lore5 = "You WILL avenge your breeds";
 			String Lore6 = "and find true peace indeed.";
 			
 			String exit ="Press 'esc' to restart";

@@ -110,8 +110,6 @@ public class Player extends Entity{
 						right1 = ImageIO.read(getClass().getResourceAsStream("/player/shinobiWalk.png"));
 						right2 = ImageIO.read(getClass().getResourceAsStream("/player/shinobiWalk.png"));
 					}
-					else 
-						System.out.println("bodo");
 				}
 			}
 			

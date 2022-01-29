@@ -160,7 +160,6 @@ public class KeyHandler implements KeyListener{
 						if(shinobiWalk == false) {
 							gp.player.speed = gp.player.speed + 2;
 							shinobiWalk = true;
-							System.out.println("gotScroll : "+shinobiWalk);
 							gp.playSoundEffect(8);
 							gp.player.getPlayerImage();
 							if(gp.ui.manaValue > 0) {
@@ -172,7 +171,6 @@ public class KeyHandler implements KeyListener{
 						else if(shinobiWalk == true) {
 							gp.player.speed = gp.player.speed - 2;
 							shinobiWalk = false;
-							System.out.println("gotScroll : "+shinobiWalk);
 							gp.player.getPlayerImage();
 
 						}
