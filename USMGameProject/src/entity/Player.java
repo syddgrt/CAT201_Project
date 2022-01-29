@@ -47,17 +47,17 @@ public class Player extends Entity{
 		solidArea.width = 28;
 		solidArea.height = 28;
 		
-		
-		
 		setDefaultValues();
-	
 		getPlayerImage();
 		
 		//pickupObject();
 	
 	}
 
-	
+
+
+
+
 	public void setDefaultValues() {
 		
 		worldX = 130;
@@ -82,7 +82,7 @@ public class Player extends Entity{
 				left2 = ImageIO.read(getClass().getResourceAsStream("/player/ninjaLeft2.png"));
 				right1 = ImageIO.read(getClass().getResourceAsStream("/player/ninjaRight1.png"));
 				right2 = ImageIO.read(getClass().getResourceAsStream("/player/ninjaRight2.png"));
-				menuImage = ImageIO.read(getClass().getResourceAsStream("/player/Menuimage.png"));
+				menuImage = ImageIO.read(getClass().getResourceAsStream("/player/MenuImage.png"));
 			}
 			if(gotArmor == true) {
 				
