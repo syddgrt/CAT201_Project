@@ -201,11 +201,11 @@ public class GamePanel extends JPanel implements Runnable{
 									 // Graphics2D has all and more functions that Graphics
 		
 		// DEBUG
-		long drawStart = 0;
-		if(keyH.checkDrawTime == true) {
+		// long drawStart = 0;
+		// if(keyH.checkDrawTime == true) {
 			
-			drawStart = System.nanoTime();
-		}
+		// 	drawStart = System.nanoTime();
+		// }
 		
 		// TITLE SCREEN
 		if(gameState == 0 ) { // Main menu
@@ -248,20 +248,15 @@ public class GamePanel extends JPanel implements Runnable{
 			if(ui.enemyStatus == 2) {
 				npc[2] = null;
 			}
+
+			
 			
 			//UI
 			ui.draw(g2);
 			
-			//DEBUG
-//			if(keyH.checkDrawTime == true) {
-//				long drawEnd = System.nanoTime();
-//				long passed = drawEnd - drawStart;
-//				g2.setColor(Color.white);
-//				g2.drawString("Draw Time : "+ passed,10,400);
-//				System.out.println("Draw Time: "+passed);
-//			}
-			
-			
+			if(keyH.toggleGUI == false){
+				ui.draw(g2);
+			}
 			//PLAYER (DRAW PLAYER AFTER TILE AND OBJECT)
 			player.draw(g2); //call draw from Player(draw player sprite)
 			

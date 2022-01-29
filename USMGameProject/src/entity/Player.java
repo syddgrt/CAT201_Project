@@ -1,7 +1,5 @@
 package entity;
 
-import java.awt.BasicStroke;
-import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
@@ -232,7 +230,6 @@ public class Player extends Entity{
 				
 				gotKey = true;
 				gp.obj[i] = null; //delete object that the player touches.
-				System.out.println("Keys : "+gotKey);
 				gp.playSoundEffect(1); // Keys sound effect
 				gp.ui.showMessage("A key? In the middle of a dense forest?");
 				
@@ -242,7 +239,6 @@ public class Player extends Entity{
 				
 				gotCastleKey = true;
 				gp.obj[i] = null; //delete object that the player touches.
-				System.out.println("Keys : "+gotCastleKey);
 				gp.playSoundEffect(1); // Keys sound effect
 				gp.ui.showMessage("Another key?...");
 				
@@ -321,7 +317,6 @@ public class Player extends Entity{
 				
 				gotArtifact = true;
 				gp.obj[i] = null; //delete object that the player touches.
-				System.out.println("Keys : "+gotArtifact);
 				gp.playMusic(10); //Ending music
 				gp.ui.showMessage("Strange looking relic...");
 				gp.gameState = 5;

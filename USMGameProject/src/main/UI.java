@@ -7,12 +7,8 @@ import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Random;
 import java.awt.BasicStroke;
 
-import javax.swing.JPanel;
-import javax.swing.text.AttributeSet.ColorAttribute;
-import javax.swing.text.AttributeSet.FontAttribute;
 
 import object.OBJkey;
 import object.OBJlife;
@@ -165,11 +161,17 @@ public class UI {
 			
 		}
 		if(gp.gameState == 1) { // Game state
-			drawPickupItem();
-			drawHealthBar();
-			if(gp.player.gotWillPower) {
-				drawManaBar();
-			}	
+			if(gp.keyH.toggleGUI == true){
+				drawPickupItem();
+				drawHealthBar();
+				if(gp.player.gotWillPower) {
+					drawManaBar();
+				}	
+			}
+			else{
+				//draw nothing on screen during gameplay
+			}
+				
 		}
 		// PAUSE 
 		if(gp.gameState == 2) { // Pause state
@@ -309,6 +311,8 @@ public class UI {
 			String Control1 = "WASD  - Movement, ";
 			String Control2 = "SPACE - Pause and Unpause";
 			String Control3 = "E 	 - Interact";
+			String Control4 = "G 	 - Toggle ingame GUI";
+			String Control5 = "X 	 - ???";
 			
 			
 			int x = 0;
@@ -317,6 +321,8 @@ public class UI {
 			g2.drawString(Control1,x+40,gp.tileSize*5);
 			g2.drawString(Control2,x+40,gp.tileSize*6);
 			g2.drawString(Control3,x+40,gp.tileSize*7);
+			g2.drawString(Control4,x+40,gp.tileSize*8);
+			g2.drawString(Control5,x+40,gp.tileSize*9);
 			
 			g2.setFont(g2.getFont().deriveFont(Font.PLAIN,38F));
 			String keybindingText = "BACK";
@@ -569,8 +575,7 @@ public class UI {
 				g2.drawImage(enemyLifeImage,650, 30-8, (gp.tileSize)+9, 35, null);
 		
 	}
-	
-	
+		
 	public void drawPickupItem() {
 		
 		g2.setFont(dialogueFont); // setfont function 
@@ -708,7 +713,7 @@ public class UI {
 		
 	}
 
-	void drawBattlePrompt(){
+	public void drawBattlePrompt(){
 		
 		// Dialogue box
 		
@@ -796,7 +801,6 @@ public class UI {
 		
 		if (endingScreenState == 0) {
 			
-			System.out.println("Ending Choice : "+endingScreenState);
 			String Lore1 = "You cast your gaze upon the relic";
 			String Lore2 = "and it felt as if the gaze returned. ";
 			String Lore3 = "The relic was an ancient artifact";

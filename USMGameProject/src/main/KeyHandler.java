@@ -5,12 +5,13 @@ import java.awt.event.KeyListener;
 import java.util.Random;
 
 import entity.Entity;
-import entity.Player;
 
 public class KeyHandler implements KeyListener{
 
 	public boolean upPressed, downPressed, leftPressed, rightPressed, stopPressedUp, stopPressedDown, stopPressedLeft, stopPressedRight, interactPressed;
 	public boolean shinobiWalk;
+
+	public boolean toggleGUI = true;
 	
 	public boolean attackPressed = false;
 	public boolean eatPressed = false;
@@ -137,6 +138,19 @@ public class KeyHandler implements KeyListener{
 				gp.playSoundEffect(6);
 
 			}
+
+			if(code == KeyEvent.VK_G) {
+				if(toggleGUI == true){
+					toggleGUI = false;
+
+				}
+				else if (toggleGUI == false){
+					toggleGUI = true;
+				}
+				
+
+			}
+
 			if(gp.player.gotArmor && gp.player.gotScroll) {
 				
 				if(gp.ui.manaValue > 0) {
