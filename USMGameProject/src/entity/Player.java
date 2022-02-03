@@ -60,10 +60,10 @@ public class Player extends Entity{
 
 	public void setDefaultValues() {
 		
-		worldX = 130;
-		worldY = 220;
-		//worldX = 2000;
-		//worldY = 1400;
+		// worldX = 130;
+		// worldY = 220;
+		worldX = 2000;
+		worldY = 1400;
 		
 		speed = 4;
 		direction = "left";

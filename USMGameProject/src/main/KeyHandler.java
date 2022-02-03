@@ -224,6 +224,8 @@ public class KeyHandler implements KeyListener{
 				if(code == KeyEvent.VK_E) {
 					
 					attackPressed = true;
+					doNothingPressed = false;
+					eatPressed = false;
 					
 					System.out.println("enemyHP"+gp.ui.enemyHealthValue);
 					gp.ui.enemyHealthValue = gp.ui.enemyHealthValue - 2;
@@ -271,8 +273,10 @@ public class KeyHandler implements KeyListener{
 			else if(gp.ui.combatChoice == 2) { //eat kitkat
 				if(code == KeyEvent.VK_E) {
 					
-					
+					attackPressed = false;
+					doNothingPressed = false;
 					eatPressed = true;
+
 					if(gp.ui.healthValue <5) {
 						
 						gp.ui.healthValue = gp.ui.healthValue + 2;
@@ -308,7 +312,11 @@ public class KeyHandler implements KeyListener{
 			}
 			else if(gp.ui.combatChoice == 3) { // do nothing
 				if(code == KeyEvent.VK_E) {
+
+					attackPressed = false;
 					doNothingPressed = true;
+					eatPressed = false;
+
 					System.out.println("Literally nothing happened...");
 					
 				}

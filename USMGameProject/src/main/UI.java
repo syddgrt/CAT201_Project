@@ -744,8 +744,6 @@ public class UI {
 				g2.setFont(dialogueFont);
 				g2.setFont(g2.getFont().deriveFont(Font.PLAIN,18F));
 				
-//				Random random = new Random(); // Use random
-//				int enemyAI = random.nextInt(2)+1; // Roll a number from 1 - 100
 				
 				if(gp.keyH.attackPressed == true) {
 					g2.drawString(prompt1,x+30,(gp.tileSize*7)+15);	

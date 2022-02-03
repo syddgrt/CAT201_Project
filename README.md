@@ -15,3 +15,7 @@ Then, search for the main file under USMGameProject > src > main > main.java and
 The game will start
 
 Any modifications to the game file must undergo <git add> and <git commit -m "MessageTitle" -m "Message">
+
+In the game
+
+W and S key to select between choices E key to confirm choice.
