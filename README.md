@@ -23,14 +23,17 @@ A Java video game project.
 
 Here’s a glimpse of **Chaos Ascendancy** in action:  
 
-![Main Menu](images/Annotation%202022-01-29%20180813.png)  
+![Main Menu](images/MainMenu.png)  
 *Main Menu with game options*  
 
-![Gameplay Scene](images/Annotation%202022-01-29%20181021.png)  
-*Gameplay battle scene*  
+![Gameplay Scene](images/Gameplay.png)  
+*Gameplay scene*  
 
-![Character Selection](images/Annotation%202022-01-29%20181300.png)  
-*Character / Level selection screen*  
+![Combat Trigger](images/CombatTrigger.png)  
+*Triggering a combat* 
+
+![Combat](images/Combat.pngpng)  
+*Combat scene*  
 
 ---
 
