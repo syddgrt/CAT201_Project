@@ -1,22 +1,39 @@
-# CAT201 JAVA PROJECT 
+# CAT201 JAVA PROJECT  
 
-'Chaos Ascendancy'
-Video Game Project
+**Chaos Ascendancy**  
+A Java video game project.  
 
-PUSHED 29/1/2022
+---
 
-INSTRUCTIONS 
+## 📅 Project Info
+- **Pushed:** 29/1/2022  
+- **Language:** Java  
+- **Course:** CAT201  
 
-Clone/Pull the whole repository into your local machine by running 
-git clone "<reposHttps link>"
+---
 
-Then, search for the main file under USMGameProject > src > main > main.java and run it
+## 🎮 Controls  
 
-The game will start
+- `W` / `S` → Navigate between menu choices  
+- `E` → Confirm selection  
 
-Any modifications to the game file must undergo <git add> and <git commit -m "MessageTitle" -m "Message">
-<<<<<<< HEAD
+---
 
-In the game
+## 📸 Screenshots  
 
-W and S key to select between choices E key to confirm choice.
+Here’s a glimpse of **Chaos Ascendancy** in action:  
+
+![Main Menu](images/Annotation%202022-01-29%20180813.png)  
+*Main Menu with game options*  
+
+![Gameplay Scene](images/Annotation%202022-01-29%20181021.png)  
+*Gameplay battle scene*  
+
+![Character Selection](images/Annotation%202022-01-29%20181300.png)  
+*Character / Level selection screen*  
+
+---
+
+## 🏆 Credits  
+
+Developed by: **Syed**  
