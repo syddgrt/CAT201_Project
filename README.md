@@ -32,7 +32,7 @@ Here’s a glimpse of **Chaos Ascendancy** in action:
 ![Combat Trigger](images/CombatTrigger.png)  
 *Triggering a combat* 
 
-![Combat](images/Combat.pngpng)  
+![Combat](images/Combat.png)  
 *Combat scene*  
 
 ---
